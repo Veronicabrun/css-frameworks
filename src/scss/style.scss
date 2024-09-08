@@ -1,0 +1,16 @@
+// style.scss
+@import "variables"; // Import your own variables
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+// Override Bootstrap variable
+//$primary: #ff6347; // Changes the primary color to tomato red
+
+body {
+  background-color: $primary;
+}
+
+
+
+
