@@ -11844,6 +11844,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+body {
+  background-color: #D9D9D9;
+}
+
 .navbar {
   background-color: #BFA18F;
 }
@@ -11851,18 +11866,9 @@ textarea.form-control-lg {
   color: #000000;
 }
 
-body {
-  background-color: #D9D9D9;
-}
-
 .btn-primary {
   background-color: #707070;
   border-color: #707070;
-}
-
-footer {
-  background-color: #BFA18F;
-  color: rgb(0, 0, 0);
 }
 
 .profile-img {
@@ -11891,6 +11897,13 @@ footer {
   height: 200px;
   object-fit: cover;
   width: 100%;
+}
+
+footer {
+  background-color: #BFA18F;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
