@@ -4,29 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feed</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../dist/css/style.css"> <!-- correctly points to your built CSS file -->
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/pages/profile/index.html">ArtConnect</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/pages/index.html">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pages/feed/index.html">Feed</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pages/profile/index.html">Profile</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/pages/profile/index.html">ArtConnect</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/index.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/feed/index.html">Feed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/profile/index.html">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container my-5">
         <h1 class="text-center mb-4">Feed</h1>
         <!-- Search and Sort -->
@@ -60,7 +62,7 @@
             <!-- Post Item 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Post Thumbnail">
+                    <img src="/Images/image1.jpg" class="card-img-top" alt="Image of a strawflower painted in watercolor in soft pink tones.">
                     <div class="card-body">
                         <h5 class="card-title">Post Title 1</h5>
                         <p class="card-text">This is a brief description of the post content. It provides a short
@@ -72,7 +74,7 @@
             <!-- Post Item 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Post Thumbnail">
+                    <img src="/Images/image2.jpg" class="card-img-top" alt="Image of a mushroom painted in watercolor in brown tones.">
                     <div class="card-body">
                         <h5 class="card-title">Post Title 2</h5>
                         <p class="card-text">Another brief description of a different post. Engaging and informative.
@@ -84,7 +86,7 @@
             <!-- Post Item 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Post Thumbnail">
+                    <img src="/Images/image3.jpg" class="card-img-top" alt="Image of a green plant painted in watercolor.">
                     <div class="card-body">
                         <h5 class="card-title">Post Title 3</h5>
                         <p class="card-text">A third example post with its own description and a button to read more.
@@ -95,12 +97,8 @@
             </div>
         </div>
     </div>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
-</body>
-<!-- Footer -->
-<footer class="bg-light text-center text-lg-start mt-5 py-4">
+    <!-- Footer -->
+<footer class="text-center text-lg-start mt-5 py-4">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mb-3 mb-md-0">
@@ -113,4 +111,8 @@
         </div>
     </div>
 </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
