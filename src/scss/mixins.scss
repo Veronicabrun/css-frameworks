@@ -1,0 +1,7 @@
+// _mixins.scss
+@mixin responsive-image($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+  }
+  

@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11849,14 +11850,16 @@ html, body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: #D9D9D9;
+  font-family: "Montserrat", sans-serif;
+}
+html h1, html .h1, html h2, html .h2, html h3, html .h3, html h4, html .h4, html h5, html .h5, html h6, html .h6, body h1, body .h1, body h2, body .h2, body h3, body .h3, body h4, body .h4, body h5, body .h5, body h6, body .h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
 .main-content {
   flex: 1;
-}
-
-body {
-  background-color: #D9D9D9;
 }
 
 .navbar {
@@ -11864,6 +11867,15 @@ body {
 }
 .navbar .navbar-nav .nav-link {
   color: #000000;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-primary {
@@ -11874,6 +11886,12 @@ body {
 .profile-img {
   width: 150px;
   height: 150px;
+  object-fit: cover;
+}
+
+.card .card-img-top {
+  width: 100%;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -11893,10 +11911,8 @@ body {
   object-fit: cover;
 }
 
-.card .card-img-top {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
+.bio, .text-muted {
+  font-style: italic;
 }
 
 footer {

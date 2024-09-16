@@ -2,12 +2,24 @@
 // style.scss
 @import "variables"; // Import your own variables
 
+@import "mixins.scss";
+
+// Import Google Fonten
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 // Override Bootstrap variable
 html, body {
   height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: $primary;
+  font-family: $primary-font;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    font-weight: $heading-font-weight;
+  }
 }
 
 // Wrapper for main content lagt til ekstra, test
@@ -15,17 +27,22 @@ html, body {
   flex: 1;
 }
 
-body {
-  background-color: $primary;
-}
-
 // Navigeringsmeny (navbar) farge
 .navbar {
     background-color: $navbar-background-color;
     .navbar-nav .nav-link {
-      color: $navbar-text-color; // Nav link text color
+      color: $navbar-text-color; 
     }
   }
+
+.navbar-brand {
+  font-family: $navbar-font-family;
+  font-size: 22px;
+}
+
+.navbar-nav .nav-link {
+  font-family: $primary-font;
+}
 
 // Farge for log in-knappen
 .btn-primary {
@@ -33,12 +50,20 @@ body {
     border-color: $login-button-color;
   }
 
+  .profile-img {
+    @include responsive-image(150px, 150px);
+  }
+  
+  .card .card-img-top {
+    @include responsive-image(100%, 200px);
+  }
+
 //Profile page
-.profile-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
+//.profile-img {
+  //width: 150px;
+  //height: 150px;
+  //object-fit: cover;
+//}
 
  .img-wrapper {
           position: relative;
@@ -56,18 +81,19 @@ body {
           object-fit: cover;
       }
 
-      .card .card-img-top {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-    }
+      //.card .card-img-top {
+       // height: 200px;
+        //object-fit: cover;
+        //width: 100%;
+    //}
   
+    .bio, .text-muted {
+      font-style: italic;
+  }
   // Farge for footeren
   footer {
     background-color: $footer-background-color;
     color: rgb(0, 0, 0); 
-
     text-align: center;
-  padding: 1rem;
-
+    padding: 1rem;
   }
