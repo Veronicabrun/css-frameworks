@@ -1,10 +1,10 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
 // style.scss
-@import "variables"; // Import your own variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "variables"; 
 
 @import "mixins.scss";
 
-// Import Google Fonten
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 // Override Bootstrap variable
@@ -22,12 +22,12 @@ html, body {
   }
 }
 
-// Wrapper for main content lagt til ekstra, test
+// Wrapper for main content 
 .main-content {
   flex: 1;
 }
 
-// Navigeringsmeny (navbar) farge
+// Navbar
 .navbar {
     background-color: $navbar-background-color;
     .navbar-nav .nav-link {
@@ -44,19 +44,29 @@ html, body {
   font-family: $primary-font;
 }
 
-// Farge for log in-knappen
+// Color login button 
 .btn-primary {
     background-color: $login-button-color;
     border-color: $login-button-color;
+
+    &:hover {
+      background-color: $custom-primary-hover-color;
+      border-color: $custom-primary-hover-color;
+    }
   }
 
-  .profile-img {
+  .text-signup {
+    color: $custom-signup-color;
+}
+
+// Profile page
+.profile-img {
     @include responsive-image(150px, 150px);
-  }
+}
   
-  .card .card-img-top {
+.card .card-img-top {
     @include responsive-image(100%, 200px);
-  }
+}
 
 //Profile page
 //.profile-img {
@@ -96,4 +106,11 @@ html, body {
     color: rgb(0, 0, 0); 
     text-align: center;
     padding: 1rem;
+ 
+
+  .text-footer-primary {
+    color: $footer-primary;
   }
+
+}
+

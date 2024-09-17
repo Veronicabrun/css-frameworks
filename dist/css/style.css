@@ -11882,6 +11882,14 @@ html h1, html .h1, html h2, html .h2, html h3, html .h3, html h4, html .h4, html
   background-color: #707070;
   border-color: #707070;
 }
+.btn-primary:hover {
+  background-color: #BFA18F;
+  border-color: #BFA18F;
+}
+
+.text-signup {
+  color: #BFA18F;
+}
 
 .profile-img {
   width: 150px;
@@ -11920,6 +11928,9 @@ footer {
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 1rem;
+}
+footer .text-footer-primary {
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
