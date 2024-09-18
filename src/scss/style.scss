@@ -30,6 +30,7 @@ html, body {
 // Navbar
 .navbar {
     background-color: $navbar-background-color;
+
     .navbar-nav .nav-link {
       color: $navbar-text-color; 
     }
@@ -43,6 +44,35 @@ html, body {
 .navbar-nav .nav-link {
   font-family: $primary-font;
 }
+
+.hover-underline {
+  position: relative;
+  text-decoration: none;
+  color: $navbar-text-color;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $navbar-text-color;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+    &.active::after {
+      transform: scaleX(1);
+    }
+}
+
 
 // Color login button 
 .btn-primary {
