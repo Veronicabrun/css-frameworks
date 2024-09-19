@@ -73,7 +73,6 @@ html, body {
     }
 }
 
-
 // Color login button 
 .btn-primary {
     background-color: $login-button-color;
@@ -98,13 +97,6 @@ html, body {
     @include responsive-image(100%, 200px);
 }
 
-//Profile page
-//.profile-img {
-  //width: 150px;
-  //height: 150px;
-  //object-fit: cover;
-//}
-
  .img-wrapper {
           position: relative;
           overflow: hidden;
@@ -121,16 +113,10 @@ html, body {
           object-fit: cover;
       }
 
-      //.card .card-img-top {
-       // height: 200px;
-        //object-fit: cover;
-        //width: 100%;
-    //}
-  
     .bio, .text-muted {
       font-style: italic;
   }
-  // Farge for footeren
+  // Color footeren
   footer {
     background-color: $footer-background-color;
     color: rgb(0, 0, 0); 
