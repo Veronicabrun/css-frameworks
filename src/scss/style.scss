@@ -116,6 +116,7 @@ html, body {
     .bio, .text-muted {
       font-style: italic;
   }
+
   // Color footeren
   footer {
     background-color: $footer-background-color;
@@ -123,10 +124,8 @@ html, body {
     text-align: center;
     padding: 1rem;
  
-
   .text-footer-primary {
     color: $footer-primary;
   }
-
 }
 
