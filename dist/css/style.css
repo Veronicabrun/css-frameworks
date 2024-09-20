@@ -11948,6 +11948,11 @@ html h1, html .h1, html h2, html .h2, html h3, html .h3, html h4, html .h4, html
   font-style: italic;
 }
 
+.bi-hand-thumbs-up,
+.bi-chat-dots {
+  color: #BFA18F;
+}
+
 footer {
   background-color: #BFA18F;
   color: rgb(0, 0, 0);
